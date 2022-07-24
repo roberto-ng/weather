@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Location } from './location';
 
 const defaultLocations: Location[] = [
-  { name: 'Paranapiacaba', lat: '-23.7778474', lon: '-46.3012913' },
+  { name: 'Paranapiacaba', subtitle: 'Santo André', lat: '-23.7778474', lon: '-46.3012913' },
+  { name: 'Shibuya', subtitle: 'Tóquio', lat: '35.6645956', lon: '139.6987107' },
 ];
 
 @Injectable({

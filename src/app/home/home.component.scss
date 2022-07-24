@@ -1,5 +1,22 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fab {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+.locations {
+    display: grid;
+    grid-auto-flow: row;
+    max-width: 400px;
+
+    align-items: center;
+    
+    margin-top: 20px;
+    gap: 15px;
 }

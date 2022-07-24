@@ -4,4 +4,5 @@ export type Location = {
   lat: string,
   /** The location's longitude */
   lon: string,
+  subtitle: string | null,
 };

@@ -44,15 +44,21 @@ export class AddLocationPageComponent implements OnInit {
             this.state = 'form';
             return;
           }
-
+          
           // on success
           const responseData = res[0];
+          const locationTitles = responseData.display_name.split(',');
+          const name = locationTitles[0]
+          const subtitle = (locationTitles.length >= 2) ? locationTitles[1] : null;
+
           const location: Location = {
-            name: responseData.display_name.split(',')[0],
+            name: name,
+            subtitle: subtitle,
             lat: responseData.lat,
             lon: responseData.lon,
           };
           this._locationStore.add(location);
+          
           // go back to the home page
           this._router.navigate(['/']);
         },
