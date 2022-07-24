@@ -6,16 +6,18 @@
                     <mat-card-title>
                         {{ location.name }}
                     </mat-card-title>
-    
                     <mat-card-subtitle *ngIf="location.subtitle">
                         {{ location.subtitle }}
                     </mat-card-subtitle>
                 </mat-card-title-group>
+
+                <mat-card-content class="justify-center">
+                    <p class="mat-h2"> 27ºC </p>
+                </mat-card-content>
             </mat-card>
         </ng-container>
     </div>
 </div>
-
 
 <a 
     mat-fab 
