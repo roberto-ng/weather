@@ -18,7 +18,7 @@ export class LocationFetcherService {
 
   constructor(private _http: HttpClient) { }
 
-  getLocation(cityName: string) {
+  getLocations(cityName: string) {
     const url = this.buildURL(cityName);
 
     return this._http.get<NominatimLocation[]>(url, {

@@ -36,7 +36,7 @@ export class AddLocationPageComponent implements OnInit {
 
     this.state = 'loading';
     this._locationFetcher
-      .getLocation(name)
+      .getLocations(name)
       .subscribe({
         next: (res) => {  
           if (res == null || res?.length === 0) {

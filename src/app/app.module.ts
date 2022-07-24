@@ -20,7 +20,7 @@ import { AddLocationPageComponent } from './add-location-page/add-location-page.
   declarations: [
     AppComponent,
     HomeComponent,
-    AddLocationPageComponent
+    AddLocationPageComponent,
   ],
   imports: [
     BrowserModule,
