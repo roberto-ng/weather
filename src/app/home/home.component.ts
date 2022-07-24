@@ -1,5 +1,6 @@
-import { LocationFetcherService } from './../location/location-fetcher.service';
 import { Component, OnInit } from '@angular/core';
+import { Location } from '../location/location';
+import { LocationStoreService } from './../location/location-store.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(private _locationFetcher: LocationFetcherService) { }
+  constructor(
+    private _locationStore: LocationStoreService,
+  ) { }
 
-  ngOnInit(): void {
-    /* 
-    this._locationFetcher
-      .getLocation('渋谷')
-      .subscribe(res => console.log(res));
-    */
+  ngOnInit(): void { }
+
+  get locations(): Location[] {
+    return this._locationStore.locations;
   }
 }

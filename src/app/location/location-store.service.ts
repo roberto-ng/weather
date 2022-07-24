@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';  
 import { Location } from './location';
 
+const defaultLocations: Location[] = [
+  { name: 'Paranapiacaba', lat: '-23.7778474', lon: '-46.3012913' },
+];
+
 @Injectable({
   providedIn: 'root'
 })
 export class LocationStoreService {
-  locations: Location[] = []; 
+  locations: Location[] = [...defaultLocations]; 
 
   constructor() {}
 
