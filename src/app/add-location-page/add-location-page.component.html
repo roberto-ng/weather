@@ -1,0 +1,20 @@
+<div class="page">
+  <p class="mat-h1">Add location:</p>
+  
+  <form [formGroup]="locationForm" (ngSubmit)="handleSubmit($event)">
+    <mat-form-field class="form-field" appearance="fill">
+      <mat-label>Location name</mat-label>
+      <input matInput type="text" formControlName="name">
+    </mat-form-field>
+
+    <div>
+      <a mat-raised-button color="warn" routerLink="/">
+        Cancel
+      </a>
+  
+      <button mat-raised-button type="submit">
+        Add
+      </button>
+    </div>
+  </form>
+</div>
