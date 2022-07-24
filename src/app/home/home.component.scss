@@ -30,3 +30,13 @@
     display: flex;
     justify-content: center;
 }
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+}

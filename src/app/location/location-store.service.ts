@@ -18,7 +18,7 @@ export class LocationStoreService {
     this.locations = [...this.locations, newLocation ];
   }
 
-  remove(location: Location): void {
-    this.locations = this.locations.filter(l => l !== location);
+  remove(index: number): void {
+    this.locations = this.locations.filter((_, i) => i !== index);
   }
 }

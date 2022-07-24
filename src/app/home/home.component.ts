@@ -67,6 +67,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  removeLocation(cardData: CardData): void {
+    const i = this.data.indexOf(cardData);
+    this._locationStore.remove(i);
+    this.data = this.data.filter((_item, j) => i !== j);
+  }
+
   get locations(): Location[] {
     return this._locationStore.locations;
   }
