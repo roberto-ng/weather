@@ -1,6 +1,8 @@
 # Weather
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+App de previsão meteorológica em tempo real, feito com Angular e Tauri.
+
+![Imagem do app](https://i.imgur.com/0NyMmUm.png)
 
 ## Development server
 
